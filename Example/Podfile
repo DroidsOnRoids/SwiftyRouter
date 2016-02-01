@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'SwiftyRouter_Example', :exclusive => true do
+  pod 'SwiftyRouter', :path => '../'
+end
+
+target 'SwiftyRouter_Tests', :exclusive => true do
+  pod 'SwiftyRouter', :path => '../'
+
+  
+end
