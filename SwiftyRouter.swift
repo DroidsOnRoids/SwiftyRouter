@@ -35,14 +35,20 @@ public protocol Subendpointable {
 
 extension Endpointable {
     
-    public func request(completion: (Response<NSData, NSError>) -> Void) -> Request {
+    public func request() -> Request {
+        return request(nil)
+    }
+    
+    public func request(completion: ((Response<NSData, NSError>) -> Void)?) -> Request {
         let request = Alamofire.request(Alamofire.Method(rawValue: endpoint.method.rawValue)!,
             baseUrl + endpoint.path,
             parameters: endpoint.parameters,
             encoding: .JSON,
             headers: endpoint.headers)
         request.responseData { response in
-            completion(response)
+            if let completion = completion {
+                completion(response)
+            }
         }
         
         return request
