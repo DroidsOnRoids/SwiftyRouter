@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/DroidsOnRoids/SwiftyRouter"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "Piotr Sochalewski" => "piotr.sochalewski@droidsonroids.pl", "Łukasz Mróz" => "lukasz.mroz@droidsonroids.pl" }
+  s.author           = { "Piotr Sochalewski" => "piotr.sochalewski@droidsonroids.pl", "Łukasz Mróz" => "lukasz.mroz@droidsonroids.pl" }
   s.source           = { :git => "https://github.com/DroidsOnRoids/SwiftyRouter.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
@@ -42,12 +42,12 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'ObjectMapper' do |cs|
-    cs.source_files = 'Pod/Classes/SwiftyRouter+ObjectMapper.swift'
+    cs.source_files = 'ObjectMapper/SwiftyRouter+ObjectMapper.swift'
     cs.dependency 'ObjectMapper'
   end
 
   s.subspec 'SwiftyJSON' do |cs|
-    cs.source_files = 'Pod/Classes/SwiftyRouter+SwiftyJSON.swift'
+    cs.source_files = 'SwiftyJSON/SwiftyRouter+SwiftyJSON.swift'
     cs.dependency 'SwiftyJSON'
   end
 
