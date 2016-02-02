@@ -9,7 +9,7 @@
 import Alamofire
 import Mapper
 
-public extension Request {
+extension Request {
     
     private func parse<T: Mappable>(type: T.Type, objectGetter: NSDictionary -> Any?, completion: SwiftyRouterResult -> Void) -> Self  {
         return response(completionHandler: { (request, response, data, error) -> Void in
@@ -19,7 +19,10 @@ public extension Request {
                 return
             }
             
-            guard let data = data else { return }
+            guard let data = data else {
+                completion(SwiftyRouterResult.Failure(ParseError.EmptyData.error))
+                return
+            }
             
             do {
                 let json = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments)
@@ -39,8 +42,7 @@ public extension Request {
                 }
             } catch {}
             
-            let parserError = NSError(domain: "com.droidsonroids.SwiftyRouterResult", code: 420, userInfo: ["error": "Parse error."])
-            completion(SwiftyRouterResult.Failure(parserError))
+            completion(SwiftyRouterResult.Failure(ParseError.CannotParse.error))
         })
     }
     
