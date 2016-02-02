@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '4C3E436363AA0DBD495F1A3D'
+               BlueprintIdentifier = 'FAF020D61E06E5D580C9F264'
                BlueprintName = 'SwiftyRouter'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'SwiftyRouter.framework'>
