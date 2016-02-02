@@ -19,7 +19,7 @@ public extension Request {
             }
             
             if let data = data,
-                json = NSString(data: data, encoding: NSUTF8StringEncoding) as? String,
+                json = String(data: data, encoding: NSUTF8StringEncoding),
                 object = objectGetter(json) {
                     completion(SwiftyRouterResult.Success(object))
             }
