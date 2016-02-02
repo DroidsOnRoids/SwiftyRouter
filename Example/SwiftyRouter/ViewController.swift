@@ -14,9 +14,7 @@ enum Github: Endpointable {
     case Repos(String)
     case UserInfo(String)
     
-    var baseUrl: String {
-        return "https://api.github.com"
-    }
+    var baseUrl: String { return "https://api.github.com" }
     
     var endpoint: Subendpointable {
         switch self {
@@ -35,7 +33,7 @@ struct ReposEndpoint: Subendpointable {
     let username: String!
     
     // Required methods/parameters
-    var path: String { return "/repos/\(username)" }
+    var path: String { return "/users/\(username)/repos" }
     var method: EndpointMethod { return .GET }
     var parameters: [String: AnyObject]? { return nil }
     var headers: [String : String]? { return nil }
@@ -52,7 +50,7 @@ struct UserInfoEndpoint: Subendpointable {
     let username: String!
     
     // Required methods/parameters
-    var path: String { return "/user/\(username)" }
+    var path: String { return "/users/\(username)" }
     var method: EndpointMethod { return .GET }
     var parameters: [String: AnyObject]? { return nil }
     var headers: [String : String]? { return nil }
@@ -69,12 +67,22 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        Github.Repos("mjacko").request().parseJSON { (response) -> Void in
-            print(response)
+        Github.Repos("mjacko").request().parseJSON { result in
+            switch result {
+            case .Success(let json):
+                print(json)
+            case .Failure(let error):
+                print("Error: \(error)")
+            }
         }
         
-        Github.Repos("mjacko").request().parseSwiftyJSON { (json, error) -> () in
-            print(json)
+        Github.UserInfo("mjacko").request().parseSwiftyJSON { result in
+            switch result {
+            case .Success(let json):
+                print(json)
+            case .Failure(let error):
+                print("Error: \(error)")
+            }
         }
     }
 
