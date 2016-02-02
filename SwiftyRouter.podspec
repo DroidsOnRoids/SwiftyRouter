@@ -51,6 +51,11 @@ Pod::Spec.new do |s|
     cs.dependency 'SwiftyJSON'
   end
 
+  s.subspec 'ModelMapper' do |cs|
+    cs.source_files = 'ModelMapper/SwiftyRouter+ModelMapper.swift'
+    cs.dependency 'ModelMapper'
+  end
+
   s.default_subspecs = 'Core'
 
 end
