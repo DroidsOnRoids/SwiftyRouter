@@ -1,11 +1,8 @@
 Pod::Spec.new do |s|
   s.name             = "SwiftyRouter"
   s.version          = "0.1.0"
-  s.summary          = "SwiftyRouter makes it easy to deal with network connection in Swift"
-
-  s.description      = <<-DESC
-                       DESC
-
+  s.summary          = "Easy networking in Swift"
+  s.description      = "SwiftyRouter makes it easy to deal with network connection in Swift"
   s.homepage         = "https://github.com/DroidsOnRoids/SwiftyRouter"
   s.license          = 'MIT'
   s.author           = { "Piotr Sochalewski" => "piotr.sochalewski@droidsonroids.pl", "Łukasz Mróz" => "lukasz.mroz@droidsonroids.pl" }
