@@ -50,6 +50,7 @@ extension Endpointable {
             parameters: endpoint.parameters,
             encoding: .JSON,
             headers: endpoint.headers)
+        
         request.responseData { response in
             if let completion = completion {
                 if response.result.error != nil {
