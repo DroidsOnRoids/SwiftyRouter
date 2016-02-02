@@ -29,7 +29,7 @@ To make it works well, first, import the module.
 import SwiftyRouter
 ```
 
-Then create `enum` for selected API service, i.e. GitHub API. Remember to implement `Endpotable` protocol with all required properties (meaning `baseUrl` and `endpoint`). In this case we cover two endpoints: user repos, and user info.
+Then create `enum` for selected API service, i.e. GitHub API. Remember to implement `Endpointable` protocol with all required properties (meaning `baseUrl` and `endpoint`). In this case we cover two endpoints: user repos, and user info.
 
 
 ```swift
@@ -118,8 +118,8 @@ Github.Repos("DroidsOnRoids").request().parseJSON { result in
 
 ## Author
 
-Droids on Roids LLC
-Piotr Sochalewski, piotr.sochalewski@droidsonroids.pl
+Droids on Roids LLC<br />
+Piotr Sochalewski, piotr.sochalewski@droidsonroids.pl<br />
 Łukasz Mróz, lukasz.mroz@droidsonroids.pl
 
 ## License
