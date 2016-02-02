@@ -7,108 +7,178 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0520A4B40078AC9AE56C84168C7FAF2B /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F6DD31EF9225D79B0AF1478E255E6A /* ReplaceMe.swift */; };
-		0F0D2A78F2FFCF74E75865BF03866273 /* Pods-SwiftyRouter_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CE59408B72FD619219BEEFA839013BBB /* Pods-SwiftyRouter_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		52D720AA82606781196FBBE337E7E0F2 /* Pods-SwiftyRouter_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B13C81A7C8EC647F5AE2FA56661054B6 /* Pods-SwiftyRouter_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8395721D25052533930533C4AFAC73DA /* SwiftyRouter.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A01BD0DB7D08AF0DAEEEA1359E6BB157 /* SwiftyRouter.bundle */; };
-		8B4266E0AF662FE248E0CFD2A0577807 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		97E2B0199AE861D200F8E5AB3EF5764A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		9EF7CFD6BD3C8493D74DCD26BD8E4B6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		A705CB02BB0D4C011DF782C6CC0FE9D7 /* Pods-SwiftyRouter_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB70296BD7AE6E9188D96BAECBBC30F /* Pods-SwiftyRouter_Tests-dummy.m */; };
-		C7DC5E5E92C325CE573B36FC1ABB7CD0 /* Pods-SwiftyRouter_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 875BCEB0D04B021945B4F8D16C586C21 /* Pods-SwiftyRouter_Example-dummy.m */; };
-		D58509A8A1DAB141119589CB27B54168 /* SwiftyRouter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 863C3CCAEE9B3E75F2873F78393AA731 /* SwiftyRouter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF4B4D6ABAC8854E809BB39F5FA5F6E1 /* SwiftyRouter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 589C2CE39A979EFB886DF7F3CD2C9949 /* SwiftyRouter-dummy.m */; };
+		03F494989CC1A8857B68A317D5D6860F /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE82608C8C2A46981A07D7E422BEB45 /* Response.swift */; };
+		0681ADC8BAE2C3185F13487BAAB4D9DD /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948996616B0A38BD6FE8C4CB309CC964 /* Upload.swift */; };
+		13C349566F664849DA0D05855724D614 /* SwiftyRouter.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 562272A652056D91A8AD2154E0509E0B /* SwiftyRouter.bundle */; };
+		2198512C593F35E2B6318E3E886D49AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EFCE8A3DC08536A2B19894C1FF3E86D /* Foundation.framework */; };
+		2C5450AC69398958CF6F7539EF7D99E5 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FC4583A4BD15196E6859EA5E990AD3F /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3211932BA6874CE2CC7D3F421AEF5B6D /* SwiftyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC5AF40F5AD14AEB6BFB910ECE734CC /* SwiftyRouter.swift */; };
+		38B742DC1C6A2425E3BBD20987DA3072 /* SwiftyRouter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A3EA4B2D0180D75885B1CEA403898B /* SwiftyRouter-dummy.m */; };
+		472F8BF5AF6F10CD0FF3825123B44434 /* SwiftyRouter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B518D5008AF4ACF84F12C823241A3A40 /* SwiftyRouter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DE5FCC41D100B113B6645EA64410F16 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5465E2051CE332BA7D4E0595F9B44718 /* ParameterEncoding.swift */; };
+		80F496237530D382A045A29654D8C11C /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52836A3E223CCB5C120D4BE7D37AC1BF /* ServerTrustPolicy.swift */; };
+		82971968CBDAB224212EEB4607C9FB8D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7835749D1C4FA403E4BB17A0C787EDCA /* Result.swift */; };
+		8399DBEE3E2D98EB1F466132E476F4D9 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10653C142FFDF1986227894BF0317944 /* MultipartFormData.swift */; };
+		96D99D0C2472535A169DED65CB231CD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EFCE8A3DC08536A2B19894C1FF3E86D /* Foundation.framework */; };
+		96FDC3A543BF59966FBCE72FA5B636DD /* Pods-SwiftyRouter_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB70296BD7AE6E9188D96BAECBBC30F /* Pods-SwiftyRouter_Tests-dummy.m */; };
+		98E6F9F9E696CE5177501FD3943D209F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EFCE8A3DC08536A2B19894C1FF3E86D /* Foundation.framework */; };
+		A2C172FE407C0BC3478ADCA91A6C9CEC /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5241F56B5C8C48BD734958D586267D1A /* Manager.swift */; };
+		A3505FA2FB3067D53847AD288AC04F03 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA14379DE2012C9EFB2B9C3A3A39AB4 /* Download.swift */; };
+		A7A54917F5A7F0356C7B545DE12692E8 /* Pods-SwiftyRouter_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B13C81A7C8EC647F5AE2FA56661054B6 /* Pods-SwiftyRouter_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A84522E2A21C9B993198BB0376BDE741 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EFCE8A3DC08536A2B19894C1FF3E86D /* Foundation.framework */; };
+		B0FB4B01682814B9E3D32F9DC4A5E762 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D4D8DBF3D77B1F970DB9DF6C963A84 /* Alamofire.swift */; };
+		B6D2DC3E3DA44CD382B9B425F40E11C1 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1C843C58F0C2DFE4522F24897D8CCE /* Alamofire-dummy.m */; };
+		BB763EBCBA3030637A729B996A997E46 /* Pods-SwiftyRouter_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CE59408B72FD619219BEEFA839013BBB /* Pods-SwiftyRouter_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C75519F0450166A6F28126ECC7664E9C /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B19103BE8402A434ED95F67573911 /* Validation.swift */; };
+		D21B7325B3642887BFBE977E021F2D26 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EBB70A7BA5F9037CD2DA409E148A73 /* ResponseSerialization.swift */; };
+		D48F146DC1EC64C7EE4392E559DF6C44 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 706C7AFFE37BA158C3553250F4B5FAED /* Alamofire.framework */; };
+		D75CA395D510E08C404E55F5BDAE55CE /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83957AB2EE778B52399CC4C903539BD0 /* Error.swift */; };
+		E9F46F06471DA396D0B6D77708D1927F /* Pods-SwiftyRouter_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 875BCEB0D04B021945B4F8D16C586C21 /* Pods-SwiftyRouter_Example-dummy.m */; };
+		FC14480CECE872865A9C6E584F886DA3 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23887509C9FF173ECBE0A470EDD527 /* Request.swift */; };
+		FEF0D7653948988B804226129471C1EC /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89117FC38D94C9DF36CA21E3C96EEB7 /* Stream.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		408F092D2E903000EA061DE051B550D5 /* PBXContainerItemProxy */ = {
+		019B585EC716C00E58E505B7EA0E1233 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A45A8DCFC32217189BD45704C39D3A65;
-			remoteInfo = "SwiftyRouter-SwiftyRouter";
+			remoteGlobalIDString = 432ECC54282C84882B482CCB4CF227FC;
+			remoteInfo = Alamofire;
 		};
-		52B2358782278BAD5340E57EDE5493A6 /* PBXContainerItemProxy */ = {
+		5EBB106FAFC80F576BA021AAB0DC3DD1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2E021A8B986FF7386FFAA006BBDD55CD;
+			remoteGlobalIDString = 432ECC54282C84882B482CCB4CF227FC;
+			remoteInfo = Alamofire;
+		};
+		90F5E120BAD71C9046C6467C31BA155D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 432ECC54282C84882B482CCB4CF227FC;
+			remoteInfo = Alamofire;
+		};
+		9491F90D3A7F5A2CB3F4DA22CE2FCF79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADAE868B586D633313F9E2C83FF01125;
 			remoteInfo = SwiftyRouter;
 		};
-		FBAF4C9344F81A75B7B78E7DA3851387 /* PBXContainerItemProxy */ = {
+		CA439DB4DD4AE4FEA2A6DE76A33D01FE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2E021A8B986FF7386FFAA006BBDD55CD;
+			remoteGlobalIDString = 83B700966562F73BFF042E844CBCF96D;
+			remoteInfo = "SwiftyRouter-SwiftyRouter";
+		};
+		F2B15AEB7B1AD4299487ADDAAA3211EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADAE868B586D633313F9E2C83FF01125;
 			remoteInfo = SwiftyRouter;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2D366B422A0B470BE64D65D2463DB300 /* Pods_SwiftyRouter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyRouter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		38F6DD31EF9225D79B0AF1478E255E6A /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
-		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		0C6D0FED8E899B7D471EDB887EF6C7A0 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10653C142FFDF1986227894BF0317944 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		10AA020017901F23DE796C7FC578F88C /* Pods_SwiftyRouter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyRouter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1900772579BC661836EC48C58377A2AA /* Pods_SwiftyRouter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyRouter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21FA4AD1EF77337F9C8F2AD871ED371D /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		23713742659BB70DD2A66A916302AFAA /* SwiftyRouter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyRouter.modulemap; sourceTree = "<group>"; };
+		23D4D8DBF3D77B1F970DB9DF6C963A84 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		3FC5AF40F5AD14AEB6BFB910ECE734CC /* SwiftyRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwiftyRouter.swift; sourceTree = "<group>"; };
+		48A3EA4B2D0180D75885B1CEA403898B /* SwiftyRouter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyRouter-dummy.m"; sourceTree = "<group>"; };
+		4FC4583A4BD15196E6859EA5E990AD3F /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		5241F56B5C8C48BD734958D586267D1A /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
+		52836A3E223CCB5C120D4BE7D37AC1BF /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		52D586E03B6612028A6371C0BFBA75B6 /* SwiftyRouter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyRouter-prefix.pch"; sourceTree = "<group>"; };
 		52DF8D96047F9924B8369370AAA9481A /* Pods-SwiftyRouter_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftyRouter_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		589C2CE39A979EFB886DF7F3CD2C9949 /* SwiftyRouter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyRouter-dummy.m"; sourceTree = "<group>"; };
+		5465E2051CE332BA7D4E0595F9B44718 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		562272A652056D91A8AD2154E0509E0B /* SwiftyRouter.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyRouter.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CF35E19CF9EF76E49CBB5F2744CEDC7 /* SwiftyRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E53BF5A61CAF6972C5CDD2C3EE6C003 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		706C7AFFE37BA158C3553250F4B5FAED /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		724C0DF772B96D0EA6F4326B1C876CEF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		779B19103BE8402A434ED95F67573911 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		7835749D1C4FA403E4BB17A0C787EDCA /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		7D7AAA0E85E40ED735D6BCBF7A243C46 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		80B4D91694177D40E095FC87F4308898 /* Pods-SwiftyRouter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftyRouter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		832BD250A07BE34F5387D072819A363A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		863C3CCAEE9B3E75F2873F78393AA731 /* SwiftyRouter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyRouter-umbrella.h"; sourceTree = "<group>"; };
+		83957AB2EE778B52399CC4C903539BD0 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
+		86AE2CD4253BA80515EB546EB0C2F87F /* SwiftyRouter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyRouter.xcconfig; sourceTree = "<group>"; };
 		875BCEB0D04B021945B4F8D16C586C21 /* Pods-SwiftyRouter_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftyRouter_Example-dummy.m"; sourceTree = "<group>"; };
-		8D96692C9C26F62B9B072265CCF5432C /* SwiftyRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A01BD0DB7D08AF0DAEEEA1359E6BB157 /* SwiftyRouter.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyRouter.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		A536C03F8E41BDF9BF161F32128507AA /* SwiftyRouter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyRouter.modulemap; sourceTree = "<group>"; };
-		A5D9E39707E67183CEAB69FAC4930B99 /* Pods_SwiftyRouter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyRouter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AE82608C8C2A46981A07D7E422BEB45 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		8D1C843C58F0C2DFE4522F24897D8CCE /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		948996616B0A38BD6FE8C4CB309CC964 /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
+		99A150D2CBB107A3A58B54A008D42980 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EFCE8A3DC08536A2B19894C1FF3E86D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		A65F930FE47012F0F02D59AEE5965FF0 /* Pods-SwiftyRouter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftyRouter_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A67B75AD2D40EE733620C43FDCB1B656 /* Pods-SwiftyRouter_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftyRouter_Example-frameworks.sh"; sourceTree = "<group>"; };
+		ADA14379DE2012C9EFB2B9C3A3A39AB4 /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
 		ADF292FC91EE5DC4FF4E286E719C4841 /* Pods-SwiftyRouter_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftyRouter_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		B13C81A7C8EC647F5AE2FA56661054B6 /* Pods-SwiftyRouter_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftyRouter_Tests-umbrella.h"; sourceTree = "<group>"; };
 		B375750F207FE0205B6591E3ABCF0932 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B449E4344D25ACE22F55404B24C2AB54 /* Pods-SwiftyRouter_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftyRouter_Tests-resources.sh"; sourceTree = "<group>"; };
+		B518D5008AF4ACF84F12C823241A3A40 /* SwiftyRouter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyRouter-umbrella.h"; sourceTree = "<group>"; };
 		B6B20C215AA535E562935937ADC6A1C1 /* Pods-SwiftyRouter_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftyRouter_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BA6F010BCCAA9061F97B368014FA1A6F /* SwiftyRouter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyRouter.xcconfig; sourceTree = "<group>"; };
 		BBC5403472668BC649D321A325C318B1 /* Pods-SwiftyRouter_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftyRouter_Tests.modulemap"; sourceTree = "<group>"; };
-		C22B322A7BFECBA63D21E5019B67A934 /* SwiftyRouter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyRouter-prefix.pch"; sourceTree = "<group>"; };
 		C44102ED2C6FFDEC83C22317448743B9 /* Pods-SwiftyRouter_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftyRouter_Example.modulemap"; sourceTree = "<group>"; };
+		C89117FC38D94C9DF36CA21E3C96EEB7 /* Stream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stream.swift; path = Source/Stream.swift; sourceTree = "<group>"; };
 		CE59408B72FD619219BEEFA839013BBB /* Pods-SwiftyRouter_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftyRouter_Example-umbrella.h"; sourceTree = "<group>"; };
 		D7BB85A8534497334BA881D22EF2A199 /* Pods-SwiftyRouter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftyRouter_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DB2094CDDEA8B576E15DFC56F552CB7B /* Pods-SwiftyRouter_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftyRouter_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		DEB70296BD7AE6E9188D96BAECBBC30F /* Pods-SwiftyRouter_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftyRouter_Tests-dummy.m"; sourceTree = "<group>"; };
 		DEEF73E8D2F82F6659CDAAAF62646D53 /* Pods-SwiftyRouter_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftyRouter_Example-resources.sh"; sourceTree = "<group>"; };
 		E1E0CA5D85E0013399190FB8FA8EDF8D /* Pods-SwiftyRouter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftyRouter_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		E6D51E88CF06503F74AC8F5ECD5A209B /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		F5EBB70A7BA5F9037CD2DA409E148A73 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		FA23887509C9FF173ECBE0A470EDD527 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		FACC8F3D52685F157683F88F4252E40B /* Pods-SwiftyRouter_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftyRouter_Tests-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0FD091D52B3F0CBD8A47929215C8A7CF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8B4266E0AF662FE248E0CFD2A0577807 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		77907516F77D1136BA50BC96D756E5BC /* Frameworks */ = {
+		86D11B9010DFF4878ED6D32F6836DB61 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C7F6A9276766430516576B75CDF6C523 /* Frameworks */ = {
+		A5AE1D340C4A0691EC28EEA8241C9FCD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97E2B0199AE861D200F8E5AB3EF5764A /* Foundation.framework in Frameworks */,
+				96D99D0C2472535A169DED65CB231CD7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E71738248EC8DECDC2943A87A172371E /* Frameworks */ = {
+		A87D3CB90B87E797553A2FB680D258D2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EF7CFD6BD3C8493D74DCD26BD8E4B6E /* Foundation.framework in Frameworks */,
+				A84522E2A21C9B993198BB0376BDE741 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B86CB110A19BAD5909BA6029D73BC1CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48F146DC1EC64C7EE4392E559DF6C44 /* Alamofire.framework in Frameworks */,
+				98E6F9F9E696CE5177501FD3943D209F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9A9CE701BA1335907681F6213AE4A01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2198512C593F35E2B6318E3E886D49AF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,31 +203,65 @@
 			path = "Target Support Files/Pods-SwiftyRouter_Example";
 			sourceTree = "<group>";
 		};
-		1696A2B42BE3E4503730123E5323C021 /* Pod */ = {
+		09192E6B9C45ACAB5568261F45FA3D88 /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				24BEF334BAFD3FF1A47F4C350A258932 /* Classes */,
+				23D4D8DBF3D77B1F970DB9DF6C963A84 /* Alamofire.swift */,
+				ADA14379DE2012C9EFB2B9C3A3A39AB4 /* Download.swift */,
+				83957AB2EE778B52399CC4C903539BD0 /* Error.swift */,
+				5241F56B5C8C48BD734958D586267D1A /* Manager.swift */,
+				10653C142FFDF1986227894BF0317944 /* MultipartFormData.swift */,
+				5465E2051CE332BA7D4E0595F9B44718 /* ParameterEncoding.swift */,
+				FA23887509C9FF173ECBE0A470EDD527 /* Request.swift */,
+				8AE82608C8C2A46981A07D7E422BEB45 /* Response.swift */,
+				F5EBB70A7BA5F9037CD2DA409E148A73 /* ResponseSerialization.swift */,
+				7835749D1C4FA403E4BB17A0C787EDCA /* Result.swift */,
+				52836A3E223CCB5C120D4BE7D37AC1BF /* ServerTrustPolicy.swift */,
+				C89117FC38D94C9DF36CA21E3C96EEB7 /* Stream.swift */,
+				948996616B0A38BD6FE8C4CB309CC964 /* Upload.swift */,
+				779B19103BE8402A434ED95F67573911 /* Validation.swift */,
+				405A7C3030F6D3BDE3978D6D558FDF7F /* Support Files */,
 			);
-			path = Pod;
+			path = Alamofire;
 			sourceTree = "<group>";
 		};
-		24BEF334BAFD3FF1A47F4C350A258932 /* Classes */ = {
+		20C396BA1B90EEE39D4B19FE012C4F6D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				38F6DD31EF9225D79B0AF1478E255E6A /* ReplaceMe.swift */,
+				09192E6B9C45ACAB5568261F45FA3D88 /* Alamofire */,
 			);
-			path = Classes;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		59116329268F91CD0342D32E697EFA33 /* Products */ = {
+		25308A143ED5AA82593A7E1D950849C4 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				A5D9E39707E67183CEAB69FAC4930B99 /* Pods_SwiftyRouter_Example.framework */,
-				2D366B422A0B470BE64D65D2463DB300 /* Pods_SwiftyRouter_Tests.framework */,
-				A01BD0DB7D08AF0DAEEEA1359E6BB157 /* SwiftyRouter.bundle */,
-				8D96692C9C26F62B9B072265CCF5432C /* SwiftyRouter.framework */,
+				9EFCE8A3DC08536A2B19894C1FF3E86D /* Foundation.framework */,
 			);
-			name = Products;
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		405A7C3030F6D3BDE3978D6D558FDF7F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				21FA4AD1EF77337F9C8F2AD871ED371D /* Alamofire.modulemap */,
+				7D7AAA0E85E40ED735D6BCBF7A243C46 /* Alamofire.xcconfig */,
+				8D1C843C58F0C2DFE4522F24897D8CCE /* Alamofire-dummy.m */,
+				E6D51E88CF06503F74AC8F5ECD5A209B /* Alamofire-prefix.pch */,
+				4FC4583A4BD15196E6859EA5E990AD3F /* Alamofire-umbrella.h */,
+				5E53BF5A61CAF6972C5CDD2C3EE6C003 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		59B91F212518421F271EBA85D5530651 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				706C7AFFE37BA158C3553250F4B5FAED /* Alamofire.framework */,
+				25308A143ED5AA82593A7E1D950849C4 /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -165,24 +269,23 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				EA3B83C2BB499A5E858291150189C23B /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				59116329268F91CD0342D32E697EFA33 /* Products */,
+				59B91F212518421F271EBA85D5530651 /* Frameworks */,
+				20C396BA1B90EEE39D4B19FE012C4F6D /* Pods */,
+				A6DA61B08017EC1CC73CAE894A45F495 /* Products */,
 				DE2E98D624153B5EB27161974A2AA734 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		84DBFFEFD2B1592CA5EFA3266209FA31 /* Support Files */ = {
+		A6DA61B08017EC1CC73CAE894A45F495 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				832BD250A07BE34F5387D072819A363A /* Info.plist */,
-				A536C03F8E41BDF9BF161F32128507AA /* SwiftyRouter.modulemap */,
-				BA6F010BCCAA9061F97B368014FA1A6F /* SwiftyRouter.xcconfig */,
-				589C2CE39A979EFB886DF7F3CD2C9949 /* SwiftyRouter-dummy.m */,
-				C22B322A7BFECBA63D21E5019B67A934 /* SwiftyRouter-prefix.pch */,
-				863C3CCAEE9B3E75F2873F78393AA731 /* SwiftyRouter-umbrella.h */,
+				0C6D0FED8E899B7D471EDB887EF6C7A0 /* Alamofire.framework */,
+				1900772579BC661836EC48C58377A2AA /* Pods_SwiftyRouter_Example.framework */,
+				10AA020017901F23DE796C7FC578F88C /* Pods_SwiftyRouter_Tests.framework */,
+				562272A652056D91A8AD2154E0509E0B /* SwiftyRouter.bundle */,
+				5CF35E19CF9EF76E49CBB5F2744CEDC7 /* SwiftyRouter.framework */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/SwiftyRouter";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		AA0C54EEFD5DAE5C9C649BA0F5AF4470 /* Pods-SwiftyRouter_Tests */ = {
@@ -203,27 +306,11 @@
 			path = "Target Support Files/Pods-SwiftyRouter_Tests";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		B01C54D127AE634429433978921888B9 /* SwiftyRouter */ = {
 			isa = PBXGroup;
 			children = (
-				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		D047233D483FD1C4DFCA4F9F9A382F46 /* SwiftyRouter */ = {
-			isa = PBXGroup;
-			children = (
-				1696A2B42BE3E4503730123E5323C021 /* Pod */,
-				84DBFFEFD2B1592CA5EFA3266209FA31 /* Support Files */,
+				3FC5AF40F5AD14AEB6BFB910ECE734CC /* SwiftyRouter.swift */,
+				FB384A8B7C330AEA7DE26DDA9D0745AB /* Support Files */,
 			);
 			name = SwiftyRouter;
 			path = ../..;
@@ -241,103 +328,125 @@
 		EA3B83C2BB499A5E858291150189C23B /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D047233D483FD1C4DFCA4F9F9A382F46 /* SwiftyRouter */,
+				B01C54D127AE634429433978921888B9 /* SwiftyRouter */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		FB384A8B7C330AEA7DE26DDA9D0745AB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				99A150D2CBB107A3A58B54A008D42980 /* Info.plist */,
+				23713742659BB70DD2A66A916302AFAA /* SwiftyRouter.modulemap */,
+				86AE2CD4253BA80515EB546EB0C2F87F /* SwiftyRouter.xcconfig */,
+				48A3EA4B2D0180D75885B1CEA403898B /* SwiftyRouter-dummy.m */,
+				52D586E03B6612028A6371C0BFBA75B6 /* SwiftyRouter-prefix.pch */,
+				B518D5008AF4ACF84F12C823241A3A40 /* SwiftyRouter-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SwiftyRouter";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1C44690E4A9D5C43712C1C2FD89A0E08 /* Headers */ = {
+		069AE464D08913BBDBFE33A407B0BA56 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52D720AA82606781196FBBE337E7E0F2 /* Pods-SwiftyRouter_Tests-umbrella.h in Headers */,
+				A7A54917F5A7F0356C7B545DE12692E8 /* Pods-SwiftyRouter_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		805A8228A3DC0B60E1963EAA9D47B74E /* Headers */ = {
+		3596CB4F4D3B12D15B3935B38D6A4A0F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D58509A8A1DAB141119589CB27B54168 /* SwiftyRouter-umbrella.h in Headers */,
+				BB763EBCBA3030637A729B996A997E46 /* Pods-SwiftyRouter_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D6A4467083C5F04D29C45D08C47936CB /* Headers */ = {
+		5F7B61281F714E2A64A51E80A2C9C062 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F0D2A78F2FFCF74E75865BF03866273 /* Pods-SwiftyRouter_Example-umbrella.h in Headers */,
+				2C5450AC69398958CF6F7539EF7D99E5 /* Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF135A3F51E7C1FF1F4B25586594504B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				472F8BF5AF6F10CD0FF3825123B44434 /* SwiftyRouter-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2E021A8B986FF7386FFAA006BBDD55CD /* SwiftyRouter */ = {
+		22D58606DB8BEB1C969D5013D5A396AF /* Pods-SwiftyRouter_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8B2319F47E0A53F37C6BF7D3E71D26BE /* Build configuration list for PBXNativeTarget "SwiftyRouter" */;
+			buildConfigurationList = 4511991F4F7B098CB41476E9E6242475 /* Build configuration list for PBXNativeTarget "Pods-SwiftyRouter_Tests" */;
 			buildPhases = (
-				680A1EF383B555017D8B017550215ADC /* Sources */,
-				0FD091D52B3F0CBD8A47929215C8A7CF /* Frameworks */,
-				D167121A1CFD845E2D5C8665A333BB5A /* Resources */,
-				805A8228A3DC0B60E1963EAA9D47B74E /* Headers */,
+				EC7D6077B68D314F17A0A153D00B4A47 /* Sources */,
+				D9A9CE701BA1335907681F6213AE4A01 /* Frameworks */,
+				069AE464D08913BBDBFE33A407B0BA56 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				217365E6D6CCEAE0A7DF11EEA0AB2782 /* PBXTargetDependency */,
-			);
-			name = SwiftyRouter;
-			productName = SwiftyRouter;
-			productReference = 8D96692C9C26F62B9B072265CCF5432C /* SwiftyRouter.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		7B09FD183D9FA7FF75B9B97A6A788A19 /* Pods-SwiftyRouter_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9916AD074A287B1143DE3141E1DF8AEC /* Build configuration list for PBXNativeTarget "Pods-SwiftyRouter_Tests" */;
-			buildPhases = (
-				667E0893CE4649CB94B250A1689E5516 /* Sources */,
-				E71738248EC8DECDC2943A87A172371E /* Frameworks */,
-				1C44690E4A9D5C43712C1C2FD89A0E08 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A959A507D8CFE741B912198DB45F6650 /* PBXTargetDependency */,
+				A9265EEA98F7B102A58D343FEE36C0C2 /* PBXTargetDependency */,
+				14A250636F134E7CCA9383B9F002864A /* PBXTargetDependency */,
 			);
 			name = "Pods-SwiftyRouter_Tests";
 			productName = "Pods-SwiftyRouter_Tests";
-			productReference = 2D366B422A0B470BE64D65D2463DB300 /* Pods_SwiftyRouter_Tests.framework */;
+			productReference = 10AA020017901F23DE796C7FC578F88C /* Pods_SwiftyRouter_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		95B7DFC560712A6C3CA19399DEA5601B /* Pods-SwiftyRouter_Example */ = {
+		2DA13CF9315F8D08D9BD9B584C9123F6 /* Pods-SwiftyRouter_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7D01C70BA01CC21E43381D70ED59EA20 /* Build configuration list for PBXNativeTarget "Pods-SwiftyRouter_Example" */;
+			buildConfigurationList = B823A1F53F5B3A9285BCF54070CC466D /* Build configuration list for PBXNativeTarget "Pods-SwiftyRouter_Example" */;
 			buildPhases = (
-				402D9336450C5CE49B3927D8EE716E16 /* Sources */,
-				C7F6A9276766430516576B75CDF6C523 /* Frameworks */,
-				D6A4467083C5F04D29C45D08C47936CB /* Headers */,
+				615AF4143D9C20348A79C982CB11C0F8 /* Sources */,
+				A87D3CB90B87E797553A2FB680D258D2 /* Frameworks */,
+				3596CB4F4D3B12D15B3935B38D6A4A0F /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4174AD4EB52A28B3C7A2C932B4448FD3 /* PBXTargetDependency */,
+				66271E6BCCAFA37903E6E800E2F5F3A9 /* PBXTargetDependency */,
+				931CF91AC597A792104429BE4D6E41BE /* PBXTargetDependency */,
 			);
 			name = "Pods-SwiftyRouter_Example";
 			productName = "Pods-SwiftyRouter_Example";
-			productReference = A5D9E39707E67183CEAB69FAC4930B99 /* Pods_SwiftyRouter_Example.framework */;
+			productReference = 1900772579BC661836EC48C58377A2AA /* Pods_SwiftyRouter_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A45A8DCFC32217189BD45704C39D3A65 /* SwiftyRouter-SwiftyRouter */ = {
+		432ECC54282C84882B482CCB4CF227FC /* Alamofire */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8CBAD13B01D3DCE21C84B5D5C0B6B556 /* Build configuration list for PBXNativeTarget "SwiftyRouter-SwiftyRouter" */;
+			buildConfigurationList = 8B2B2DA2F7F80D41B1FDB5FACFA4B3DE /* Build configuration list for PBXNativeTarget "Alamofire" */;
 			buildPhases = (
-				1473BB144A8BD0990FA37310B0D2538F /* Sources */,
-				77907516F77D1136BA50BC96D756E5BC /* Frameworks */,
-				F518B0530FFE7777F426E1E70C2044F4 /* Resources */,
+				EF659EFF40D426A3A32A82CDB98CC6EE /* Sources */,
+				A5AE1D340C4A0691EC28EEA8241C9FCD /* Frameworks */,
+				5F7B61281F714E2A64A51E80A2C9C062 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 0C6D0FED8E899B7D471EDB887EF6C7A0 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		83B700966562F73BFF042E844CBCF96D /* SwiftyRouter-SwiftyRouter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F5EF9F106F0113D72B28DBE76CA3CFA /* Build configuration list for PBXNativeTarget "SwiftyRouter-SwiftyRouter" */;
+			buildPhases = (
+				FA2A9345C16CCEF4B296F4458AD90342 /* Sources */,
+				86D11B9010DFF4878ED6D32F6836DB61 /* Frameworks */,
+				96E4EFC4CA72D54B48BBB8363851AD1F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -345,8 +454,28 @@
 			);
 			name = "SwiftyRouter-SwiftyRouter";
 			productName = "SwiftyRouter-SwiftyRouter";
-			productReference = A01BD0DB7D08AF0DAEEEA1359E6BB157 /* SwiftyRouter.bundle */;
+			productReference = 562272A652056D91A8AD2154E0509E0B /* SwiftyRouter.bundle */;
 			productType = "com.apple.product-type.bundle";
+		};
+		ADAE868B586D633313F9E2C83FF01125 /* SwiftyRouter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9161836C30FD08842E827AF3B2FF262 /* Build configuration list for PBXNativeTarget "SwiftyRouter" */;
+			buildPhases = (
+				5DAB04545ED377F3B0B129FCDD4C8383 /* Sources */,
+				B86CB110A19BAD5909BA6029D73BC1CC /* Frameworks */,
+				AB327818B07ADA05B554B390C6BA30EB /* Resources */,
+				FF135A3F51E7C1FF1F4B25586594504B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA9F9BEA7A5FC8605AEE96EB5AE2100A /* PBXTargetDependency */,
+				F6819251F79942605DDC0B425D2D52B9 /* PBXTargetDependency */,
+			);
+			name = SwiftyRouter;
+			productName = SwiftyRouter;
+			productReference = 5CF35E19CF9EF76E49CBB5F2744CEDC7 /* SwiftyRouter.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -365,89 +494,130 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 59116329268F91CD0342D32E697EFA33 /* Products */;
+			productRefGroup = A6DA61B08017EC1CC73CAE894A45F495 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				95B7DFC560712A6C3CA19399DEA5601B /* Pods-SwiftyRouter_Example */,
-				7B09FD183D9FA7FF75B9B97A6A788A19 /* Pods-SwiftyRouter_Tests */,
-				2E021A8B986FF7386FFAA006BBDD55CD /* SwiftyRouter */,
-				A45A8DCFC32217189BD45704C39D3A65 /* SwiftyRouter-SwiftyRouter */,
+				432ECC54282C84882B482CCB4CF227FC /* Alamofire */,
+				2DA13CF9315F8D08D9BD9B584C9123F6 /* Pods-SwiftyRouter_Example */,
+				22D58606DB8BEB1C969D5013D5A396AF /* Pods-SwiftyRouter_Tests */,
+				ADAE868B586D633313F9E2C83FF01125 /* SwiftyRouter */,
+				83B700966562F73BFF042E844CBCF96D /* SwiftyRouter-SwiftyRouter */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D167121A1CFD845E2D5C8665A333BB5A /* Resources */ = {
+		96E4EFC4CA72D54B48BBB8363851AD1F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8395721D25052533930533C4AFAC73DA /* SwiftyRouter.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F518B0530FFE7777F426E1E70C2044F4 /* Resources */ = {
+		AB327818B07ADA05B554B390C6BA30EB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13C349566F664849DA0D05855724D614 /* SwiftyRouter.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1473BB144A8BD0990FA37310B0D2538F /* Sources */ = {
+		5DAB04545ED377F3B0B129FCDD4C8383 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38B742DC1C6A2425E3BBD20987DA3072 /* SwiftyRouter-dummy.m in Sources */,
+				3211932BA6874CE2CC7D3F421AEF5B6D /* SwiftyRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		402D9336450C5CE49B3927D8EE716E16 /* Sources */ = {
+		615AF4143D9C20348A79C982CB11C0F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7DC5E5E92C325CE573B36FC1ABB7CD0 /* Pods-SwiftyRouter_Example-dummy.m in Sources */,
+				E9F46F06471DA396D0B6D77708D1927F /* Pods-SwiftyRouter_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		667E0893CE4649CB94B250A1689E5516 /* Sources */ = {
+		EC7D6077B68D314F17A0A153D00B4A47 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A705CB02BB0D4C011DF782C6CC0FE9D7 /* Pods-SwiftyRouter_Tests-dummy.m in Sources */,
+				96FDC3A543BF59966FBCE72FA5B636DD /* Pods-SwiftyRouter_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		680A1EF383B555017D8B017550215ADC /* Sources */ = {
+		EF659EFF40D426A3A32A82CDB98CC6EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0520A4B40078AC9AE56C84168C7FAF2B /* ReplaceMe.swift in Sources */,
-				DF4B4D6ABAC8854E809BB39F5FA5F6E1 /* SwiftyRouter-dummy.m in Sources */,
+				B6D2DC3E3DA44CD382B9B425F40E11C1 /* Alamofire-dummy.m in Sources */,
+				B0FB4B01682814B9E3D32F9DC4A5E762 /* Alamofire.swift in Sources */,
+				A3505FA2FB3067D53847AD288AC04F03 /* Download.swift in Sources */,
+				D75CA395D510E08C404E55F5BDAE55CE /* Error.swift in Sources */,
+				A2C172FE407C0BC3478ADCA91A6C9CEC /* Manager.swift in Sources */,
+				8399DBEE3E2D98EB1F466132E476F4D9 /* MultipartFormData.swift in Sources */,
+				4DE5FCC41D100B113B6645EA64410F16 /* ParameterEncoding.swift in Sources */,
+				FC14480CECE872865A9C6E584F886DA3 /* Request.swift in Sources */,
+				03F494989CC1A8857B68A317D5D6860F /* Response.swift in Sources */,
+				D21B7325B3642887BFBE977E021F2D26 /* ResponseSerialization.swift in Sources */,
+				82971968CBDAB224212EEB4607C9FB8D /* Result.swift in Sources */,
+				80F496237530D382A045A29654D8C11C /* ServerTrustPolicy.swift in Sources */,
+				FEF0D7653948988B804226129471C1EC /* Stream.swift in Sources */,
+				0681ADC8BAE2C3185F13487BAAB4D9DD /* Upload.swift in Sources */,
+				C75519F0450166A6F28126ECC7664E9C /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA2A9345C16CCEF4B296F4458AD90342 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		217365E6D6CCEAE0A7DF11EEA0AB2782 /* PBXTargetDependency */ = {
+		14A250636F134E7CCA9383B9F002864A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyRouter;
+			target = ADAE868B586D633313F9E2C83FF01125 /* SwiftyRouter */;
+			targetProxy = 9491F90D3A7F5A2CB3F4DA22CE2FCF79 /* PBXContainerItemProxy */;
+		};
+		66271E6BCCAFA37903E6E800E2F5F3A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 432ECC54282C84882B482CCB4CF227FC /* Alamofire */;
+			targetProxy = 90F5E120BAD71C9046C6467C31BA155D /* PBXContainerItemProxy */;
+		};
+		931CF91AC597A792104429BE4D6E41BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyRouter;
+			target = ADAE868B586D633313F9E2C83FF01125 /* SwiftyRouter */;
+			targetProxy = F2B15AEB7B1AD4299487ADDAAA3211EB /* PBXContainerItemProxy */;
+		};
+		A9265EEA98F7B102A58D343FEE36C0C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 432ECC54282C84882B482CCB4CF227FC /* Alamofire */;
+			targetProxy = 019B585EC716C00E58E505B7EA0E1233 /* PBXContainerItemProxy */;
+		};
+		EA9F9BEA7A5FC8605AEE96EB5AE2100A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 432ECC54282C84882B482CCB4CF227FC /* Alamofire */;
+			targetProxy = 5EBB106FAFC80F576BA021AAB0DC3DD1 /* PBXContainerItemProxy */;
+		};
+		F6819251F79942605DDC0B425D2D52B9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "SwiftyRouter-SwiftyRouter";
-			target = A45A8DCFC32217189BD45704C39D3A65 /* SwiftyRouter-SwiftyRouter */;
-			targetProxy = 408F092D2E903000EA061DE051B550D5 /* PBXContainerItemProxy */;
-		};
-		4174AD4EB52A28B3C7A2C932B4448FD3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftyRouter;
-			target = 2E021A8B986FF7386FFAA006BBDD55CD /* SwiftyRouter */;
-			targetProxy = FBAF4C9344F81A75B7B78E7DA3851387 /* PBXContainerItemProxy */;
-		};
-		A959A507D8CFE741B912198DB45F6650 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftyRouter;
-			target = 2E021A8B986FF7386FFAA006BBDD55CD /* SwiftyRouter */;
-			targetProxy = 52B2358782278BAD5340E57EDE5493A6 /* PBXContainerItemProxy */;
+			target = 83B700966562F73BFF042E844CBCF96D /* SwiftyRouter-SwiftyRouter */;
+			targetProxy = CA439DB4DD4AE4FEA2A6DE76A33D01FE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -486,9 +656,9 @@
 			};
 			name = Release;
 		};
-		19B53AA5C16D00F876EADF542E877EA9 /* Debug */ = {
+		1F2230D3E83C0542398976D5BE47406D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80B4D91694177D40E095FC87F4308898 /* Pods-SwiftyRouter_Tests.debug.xcconfig */;
+			baseConfigurationReference = A65F930FE47012F0F02D59AEE5965FF0 /* Pods-SwiftyRouter_Tests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -503,51 +673,22 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SwiftyRouter_Tests/Pods-SwiftyRouter_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = Pods_SwiftyRouter_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		1D73748DDEDCA7D908AA97A69F5F0D1A /* Debug */ = {
+		3DC7EF59C323AB6E542BB84617BDAD20 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA6F010BCCAA9061F97B368014FA1A6F /* SwiftyRouter.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyRouter/SwiftyRouter-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyRouter/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftyRouter/SwiftyRouter.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftyRouter;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		38719A45A649A2BC38333C56624F05CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA6F010BCCAA9061F97B368014FA1A6F /* SwiftyRouter.xcconfig */;
+			baseConfigurationReference = 86AE2CD4253BA80515EB546EB0C2F87F /* SwiftyRouter.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -572,9 +713,21 @@
 			};
 			name = Release;
 		};
-		3AFC197A09A182FAD1376D346CC6A136 /* Debug */ = {
+		3DD952F93AF361E56D072FF22D77DCC1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1E0CA5D85E0013399190FB8FA8EDF8D /* Pods-SwiftyRouter_Example.debug.xcconfig */;
+			baseConfigurationReference = 86AE2CD4253BA80515EB546EB0C2F87F /* SwiftyRouter.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = SwiftyRouter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		51347C6CC43E058148BBA2D2833EC82A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D7AAA0E85E40ED735D6BCBF7A243C46 /* Alamofire.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -583,17 +736,42 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-SwiftyRouter_Example/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SwiftyRouter_Example/Pods-SwiftyRouter_Example.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_SwiftyRouter_Example;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		522FEE0B499C919EF6D83E20DE50C19B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86AE2CD4253BA80515EB546EB0C2F87F /* SwiftyRouter.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyRouter/SwiftyRouter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyRouter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyRouter/SwiftyRouter.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyRouter;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -642,9 +820,9 @@
 			};
 			name = Debug;
 		};
-		6F4E0D0DACEAC71777B61292B8C55738 /* Release */ = {
+		7AAD18CBFEF25DBC3896B273F01CB668 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A65F930FE47012F0F02D59AEE5965FF0 /* Pods-SwiftyRouter_Tests.release.xcconfig */;
+			baseConfigurationReference = 80B4D91694177D40E095FC87F4308898 /* Pods-SwiftyRouter_Tests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -659,11 +837,82 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SwiftyRouter_Tests/Pods-SwiftyRouter_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = Pods_SwiftyRouter_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A3EAB6904C17451B153FC67CC90CDFDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1E0CA5D85E0013399190FB8FA8EDF8D /* Pods-SwiftyRouter_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftyRouter_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftyRouter_Example/Pods-SwiftyRouter_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SwiftyRouter_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A458F08524738DA6CE9CF3BA4F72854C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86AE2CD4253BA80515EB546EB0C2F87F /* SwiftyRouter.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = SwiftyRouter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		BCDE1E85FD75D976235B1535F079754A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D7AAA0E85E40ED735D6BCBF7A243C46 /* Alamofire.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -672,19 +921,7 @@
 			};
 			name = Release;
 		};
-		CC94A102DB9E9AB143D817CB43C8F4E5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA6F010BCCAA9061F97B368014FA1A6F /* SwiftyRouter.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = SwiftyRouter;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		D162F2F1BEF1F1DEA8349D89F19243E1 /* Release */ = {
+		E0C57B1E54AAA037EE2710089F394767 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D7BB85A8534497334BA881D22EF2A199 /* Pods-SwiftyRouter_Example.release.xcconfig */;
 			buildSettings = {
@@ -714,18 +951,6 @@
 			};
 			name = Release;
 		};
-		DD9BB28C9BAC856776B41C4D29560C0C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA6F010BCCAA9061F97B368014FA1A6F /* SwiftyRouter.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = SwiftyRouter;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -738,38 +963,47 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7D01C70BA01CC21E43381D70ED59EA20 /* Build configuration list for PBXNativeTarget "Pods-SwiftyRouter_Example" */ = {
+		4511991F4F7B098CB41476E9E6242475 /* Build configuration list for PBXNativeTarget "Pods-SwiftyRouter_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3AFC197A09A182FAD1376D346CC6A136 /* Debug */,
-				D162F2F1BEF1F1DEA8349D89F19243E1 /* Release */,
+				7AAD18CBFEF25DBC3896B273F01CB668 /* Debug */,
+				1F2230D3E83C0542398976D5BE47406D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8B2319F47E0A53F37C6BF7D3E71D26BE /* Build configuration list for PBXNativeTarget "SwiftyRouter" */ = {
+		6F5EF9F106F0113D72B28DBE76CA3CFA /* Build configuration list for PBXNativeTarget "SwiftyRouter-SwiftyRouter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1D73748DDEDCA7D908AA97A69F5F0D1A /* Debug */,
-				38719A45A649A2BC38333C56624F05CD /* Release */,
+				A458F08524738DA6CE9CF3BA4F72854C /* Debug */,
+				3DD952F93AF361E56D072FF22D77DCC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8CBAD13B01D3DCE21C84B5D5C0B6B556 /* Build configuration list for PBXNativeTarget "SwiftyRouter-SwiftyRouter" */ = {
+		8B2B2DA2F7F80D41B1FDB5FACFA4B3DE /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DD9BB28C9BAC856776B41C4D29560C0C /* Debug */,
-				CC94A102DB9E9AB143D817CB43C8F4E5 /* Release */,
+				51347C6CC43E058148BBA2D2833EC82A /* Debug */,
+				BCDE1E85FD75D976235B1535F079754A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9916AD074A287B1143DE3141E1DF8AEC /* Build configuration list for PBXNativeTarget "Pods-SwiftyRouter_Tests" */ = {
+		B823A1F53F5B3A9285BCF54070CC466D /* Build configuration list for PBXNativeTarget "Pods-SwiftyRouter_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				19B53AA5C16D00F876EADF542E877EA9 /* Debug */,
-				6F4E0D0DACEAC71777B61292B8C55738 /* Release */,
+				A3EAB6904C17451B153FC67CC90CDFDA /* Debug */,
+				E0C57B1E54AAA037EE2710089F394767 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9161836C30FD08842E827AF3B2FF262 /* Build configuration list for PBXNativeTarget "SwiftyRouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				522FEE0B499C919EF6D83E20DE50C19B /* Debug */,
+				3DC7EF59C323AB6E542BB84617BDAD20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

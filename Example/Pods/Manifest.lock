@@ -1,5 +1,7 @@
 PODS:
-  - SwiftyRouter (0.1.0)
+  - Alamofire (3.1.5)
+  - SwiftyRouter (0.1.0):
+    - Alamofire (~> 3.1)
 
 DEPENDENCIES:
   - SwiftyRouter (from `../`)
@@ -9,6 +11,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SwiftyRouter: d74668534ff34669edb234d1407bc237cfbfb3aa
+  Alamofire: 5f730ba29fd113b7ddd71c1e65d0c630acf5d7b0
+  SwiftyRouter: 15e131d2da0213bb374dfdedd913881da066cb60
 
 COCOAPODS: 0.39.0

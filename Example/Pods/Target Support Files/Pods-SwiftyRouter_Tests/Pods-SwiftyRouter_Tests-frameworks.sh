@@ -84,8 +84,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-SwiftyRouter_Tests/Alamofire.framework"
   install_framework "Pods-SwiftyRouter_Tests/SwiftyRouter.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-SwiftyRouter_Tests/Alamofire.framework"
   install_framework "Pods-SwiftyRouter_Tests/SwiftyRouter.framework"
 fi
