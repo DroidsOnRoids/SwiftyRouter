@@ -7,6 +7,4 @@ end
 
 target 'SwiftyRouter_Tests', :exclusive => true do
   pod 'SwiftyRouter', :path => '../'
-
-  
 end
