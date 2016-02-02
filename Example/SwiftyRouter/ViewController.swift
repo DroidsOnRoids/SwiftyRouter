@@ -7,12 +7,58 @@
 //
 
 import UIKit
+import SwiftyRouter
+
+enum Github: Endpointable {
+    case Repos(String)
+    case UserInfo(String)
+    
+    var baseUrl: String { return "https://api.github.com" }
+    var endpoint: Subendpointable {
+        switch self {
+        case .Repos(let username):
+            return ReposEndpoint(username: username)
+        case .UserInfo(let username):
+            return UserInfoEndpoint(username: username)
+        }
+    }
+}
+
+struct ReposEndpoint: Subendpointable {
+    // We specify the parameters
+    let username: String!
+    
+    // Required methods/parameters
+    var path: String { return "/repos/\(username)" }
+    var method: EndpointMethod { return .GET }
+    
+    init(username: String) {
+        self.username = username
+    }
+}
+
+struct UserInfoEndpoint: Subendpointable {
+    // We specify the parameters
+    let username: String!
+    
+    // Required methods/parameters
+    var path: String { return "/user/\(username)" }
+    var method: EndpointMethod { return .GET }
+    
+    init(username: String) {
+        self.username = username
+    }
+}
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        Github.Repos("mjacko").request {
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {
