@@ -19,21 +19,38 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/SwiftyRouter"
+  s.homepage         = "https://github.com/DroidsOnRoids/SwiftyRouter"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "Piotr Sochalewski" => "piotr.sochalewski@droidsonroids.pl" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/SwiftyRouter.git", :tag => s.version.to_s }
+  s.author           = { "Piotr Sochalewski" => "piotr.sochalewski@droidsonroids.pl", "Łukasz Mróz" => "lukasz.mroz@droidsonroids.pl" }
+  s.source           = { :git => "https://github.com/DroidsOnRoids/SwiftyRouter.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-  s.source_files = '*.swift'
+
   s.resource_bundles = {
     'SwiftyRouter' => ['Pod/Assets/*.png']
   }
 
   s.frameworks = 'Foundation'
-  s.dependency 'Alamofire', '~> 3.1'
+
+  s.subspec 'Core' do |cs|
+    cs.source_files = 'SwiftyRouter.swift'
+    cs.dependency 'Alamofire', '~> 3.1'
+  end
+
+  s.subspec 'ObjectMapper' do |cs|
+    cs.source_files = '/Classes/SwiftyRouter+ObjectMapper.swift'
+    cs.dependency 'ObjectMapper'
+  end
+
+  s.subspec 'SwiftyJSON' do |cs|
+    cs.source_files = '/Classes/SwiftyRouter+SwiftyJSON.swift'
+    cs.dependency 'SwiftyJSON'
+  end
+
+  s.default_subspecs = 'Core'
+
 end
