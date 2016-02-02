@@ -5,3 +5,25 @@
 //  Created by Lukasz Mroz on 02.02.2016.
 //
 //
+
+import Alamofire
+import SwiftyJSON
+
+extension Request {
+    
+    public func parseJSON(completion: (AnyObject?) -> ()) -> Self {
+        return self.response(queue: nil, responseSerializer: Request.JSONResponseSerializer(options: .AllowFragments), completionHandler: { response in
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
+                if response.result.isFailure {
+                    completion(nil)
+                } else {
+                    let responseJSON = SwiftyJSON.JSON(response.result.value!)
+                    dispatch_async(dispatch_get_main_queue(), {
+                        completion(responseJSON.object)
+                    })
+                }
+            })
+        })
+    }
+    
+}
