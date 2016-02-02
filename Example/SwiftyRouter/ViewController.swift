@@ -35,12 +35,10 @@ struct ReposEndpoint: Subendpointable {
     let username: String!
     
     // Required methods/parameters
-    var path: String {
-        return "/repos/\(username)"
-    }
-    var method: EndpointMethod {
-        return .GET
-    }
+    var path: String { return "/repos/\(username)" }
+    var method: EndpointMethod { return .GET }
+    var parameters: [String: AnyObject]? { return nil }
+    var headers: [String : String]? { return nil }
     
     init(username: String) {
         self.username = username
@@ -54,12 +52,10 @@ struct UserInfoEndpoint: Subendpointable {
     let username: String!
     
     // Required methods/parameters
-    var path: String {
-        return "/user/\(username)"
-    }
-    var method: EndpointMethod {
-        return .GET
-    }
+    var path: String { return "/user/\(username)" }
+    var method: EndpointMethod { return .GET }
+    var parameters: [String: AnyObject]? { return nil }
+    var headers: [String : String]? { return nil }
     
     init(username: String) {
         self.username = username
@@ -73,8 +69,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        Github.Repos("mjacko").request {
-            
+        Github.Repos("mjacko").request().parseJSON { (response) -> Void in
+            print(response)
+        }
+        
+        Github.Repos("mjacko").request().parseSwiftyJSON { (json, error) -> () in
+            print(json)
         }
     }
 
@@ -84,4 +84,3 @@ class ViewController: UIViewController {
     }
 
 }
-

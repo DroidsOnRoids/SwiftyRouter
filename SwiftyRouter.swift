@@ -40,14 +40,24 @@ public protocol Subendpointable {
 
 extension Endpointable {
     
-    public func request(completion: (Response<NSData, NSError>) -> Void) -> Request {
+    public func request() -> Request {
+        return request(nil)
+    }
+    
+    public func request(completion: (SwiftyRouterResult -> Void)?) -> Request {
         let request = Alamofire.request(Alamofire.Method(rawValue: endpoint.method.rawValue)!,
             baseUrl + endpoint.path,
             parameters: endpoint.parameters,
             encoding: .JSON,
             headers: endpoint.headers)
         request.responseData { response in
-            completion(response)
+            if let completion = completion {
+                if response.result.error != nil {
+                    completion(SwiftyRouterResult.Failure(response.result.error!))
+                } else {
+                    completion(SwiftyRouterResult.Success(response.result.value!))
+                }
+            }
         }
         
         return request
@@ -57,9 +67,13 @@ extension Endpointable {
 
 extension Request {
     
-    public func parseJSON(completion: (Response<AnyObject, NSError>) -> Void) -> Void {
+    public func parseJSON(completion: (SwiftyRouterResult -> Void)) -> Void {
         self.responseJSON { response in
-            completion(response)
+            if response.result.error != nil {
+                completion(SwiftyRouterResult.Failure(response.result.error!))
+            } else {
+                completion(SwiftyRouterResult.Success(response.result.value!))
+            }
         }
     }
     
