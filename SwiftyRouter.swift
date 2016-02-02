@@ -35,19 +35,27 @@ public protocol Subendpointable {
 
 extension Endpointable {
     
-    public func request(completionBlock: () -> ()) -> Request {
-        return Alamofire.request(Alamofire.Method(rawValue: endpoint.method.rawValue)!,
+    public func request(completion: (Response<NSData, NSError>) -> Void) -> Request {
+        let request = Alamofire.request(Alamofire.Method(rawValue: endpoint.method.rawValue)!,
             baseUrl + endpoint.path,
             parameters: endpoint.parameters,
             encoding: .JSON,
             headers: endpoint.headers)
+        request.responseData { response in
+            completion(response)
+        }
+        
+        return request
     }
     
 }
 
 extension Request {
     
-    public func parseObject(completionBlock: () -> ()) {
+    public func parseJSON(completion: (Response<AnyObject, NSError>) -> Void) -> Void {
+        self.responseJSON { response in
+            completion(response)
+        }
     }
     
 }
