@@ -81,3 +81,27 @@ extension Request {
     }
     
 }
+
+extension Request {
+    
+    public enum ParseError {
+        
+        case EmptyData
+        case CannotParse
+        
+        var domain: String {
+            return "com.droidsonroids.SwiftyRouterResult"
+        }
+        
+        var error: NSError {
+            switch self {
+            case .CannotParse:
+                return NSError(domain: domain, code: 420, userInfo: ["error": "Parse error."])
+            case .EmptyData:
+                return NSError(domain: domain, code: 421, userInfo: ["error": "Empty data."])
+            }
+        }
+        
+    }
+    
+}

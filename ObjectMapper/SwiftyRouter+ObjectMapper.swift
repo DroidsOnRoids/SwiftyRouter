@@ -19,15 +19,18 @@ public extension Request {
                 return
             }
             
-            if let data = data,
-                json = String(data: data, encoding: NSUTF8StringEncoding),
+            guard let data = data else {
+                completion(SwiftyRouterResult.Failure(ParseError.EmptyData.error))
+                return
+            }
+            
+            if let json = String(data: data, encoding: NSUTF8StringEncoding),
                 object = objectGetter(json) {
                     completion(SwiftyRouterResult.Success(object))
                     return
             }
             
-            let parserError = NSError(domain: "com.droidsonroids.SwiftyRouterResult", code: 420, userInfo: ["error": "Parse error."])
-            completion(SwiftyRouterResult.Failure(parserError))
+            completion(SwiftyRouterResult.Failure(ParseError.CannotParse.error))
         })
     }
     
