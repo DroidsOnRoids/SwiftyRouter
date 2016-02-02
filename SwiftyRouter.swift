@@ -17,6 +17,11 @@ public enum EndpointMethod: String {
     
 }
 
+public enum SwiftyRouterResult {
+    case Success(Any)
+    case Failure(NSError)
+}
+
 public protocol Endpointable {
     
     var baseUrl: String { get }
