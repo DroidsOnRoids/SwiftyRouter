@@ -42,12 +42,12 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'ObjectMapper' do |cs|
-    cs.source_files = '/Classes/SwiftyRouter+ObjectMapper.swift'
+    cs.source_files = 'Pod/Classes/SwiftyRouter+ObjectMapper.swift'
     cs.dependency 'ObjectMapper'
   end
 
   s.subspec 'SwiftyJSON' do |cs|
-    cs.source_files = '/Classes/SwiftyRouter+SwiftyJSON.swift'
+    cs.source_files = 'Pod/Classes/SwiftyRouter+SwiftyJSON.swift'
     cs.dependency 'SwiftyJSON'
   end
 
