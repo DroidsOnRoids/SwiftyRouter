@@ -16,12 +16,14 @@ public extension Request {
             
             if let error = error {
                 completion(SwiftyRouterResult.Failure(error))
+                return
             }
             
             if let data = data,
                 json = String(data: data, encoding: NSUTF8StringEncoding),
                 object = objectGetter(json) {
                     completion(SwiftyRouterResult.Success(object))
+                    return
             }
             
             let parserError = NSError(domain: "com.droidsonroids.SwiftyRouterResult", code: 420, userInfo: ["error": "Parse error."])
