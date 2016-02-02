@@ -37,8 +37,8 @@ Pod::Spec.new do |s|
   s.frameworks = 'Foundation'
 
   s.subspec 'Core' do |cs|
-    s.source_files = 'SwiftyRouter.swift'    
-    s.dependency 'Alamofire', '~> 3.1'
+    cs.source_files = 'SwiftyRouter.swift'
+    cs.dependency 'Alamofire', '~> 3.1'
   end
 
   s.subspec 'ObjectMapper' do |cs|
