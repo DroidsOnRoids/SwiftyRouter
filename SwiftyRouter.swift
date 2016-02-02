@@ -70,20 +70,6 @@ extension Endpointable {
 
 extension Request {
     
-    public func parseJSON(completion: (SwiftyRouterResult -> Void)) -> Void {
-        self.responseJSON { response in
-            if response.result.error != nil {
-                completion(SwiftyRouterResult.Failure(response.result.error!))
-            } else {
-                completion(SwiftyRouterResult.Success(response.result.value!))
-            }
-        }
-    }
-    
-}
-
-extension Request {
-    
     public enum ParseError {
         
         case EmptyData
@@ -102,6 +88,16 @@ extension Request {
             }
         }
         
+    }
+    
+    public func parseJSON(completion: (SwiftyRouterResult -> Void)) -> Void {
+        self.responseJSON { response in
+            if response.result.error != nil {
+                completion(SwiftyRouterResult.Failure(response.result.error!))
+            } else {
+                completion(SwiftyRouterResult.Success(response.result.value!))
+            }
+        }
     }
     
 }
