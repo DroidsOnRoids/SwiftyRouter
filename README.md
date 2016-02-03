@@ -21,9 +21,17 @@ it, simply add the following line to your Podfile:
 pod "SwiftyRouter"
 ```
 
+If you want to parse response to objects, and you are using [ObjectMapper](https://github.com/Hearst-DD/ObjectMapper), [ModelMapper](https://github.com/lyft/mapper) or [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON) we got you covered. Simply use one of the lines below:
+
+```ruby
+pod "SwiftyRouter/ObjectMapper"
+pod "SwiftyRouter/ModelMapper"
+pod "SwiftyRouter/SwiftyJSON"
+```
+
 ## Usage
 
-SwiftyRouter lets you get easily raw `NSData`, parsed `JSON` or even mapped model received from API request this way:
+SwiftyRouter lets you get easily raw `NSData`, parsed `JSON` or mapped model received from API request this way:
 
 ```swift
 MyAPI.Authenticate().request().parseJSON(:_)
@@ -111,13 +119,25 @@ Github.UserInfo("DroidsOnRoids").request { result in
 }
 ```
 
-Need more than just clear `NSData`? Try `parseJSON()` or even map this with your favorite mapper (currently supported ObjectMapper and ModelMapper).
+Need more than just clear `NSData`? Try `parseJSON()`.
 
 ```swift
 Github.Repos("DroidsOnRoids").request().parseJSON { result in
     switch result {
     case .Success(let json):
         print("What a beautiful dict!\n\(json)")
+    case .Failure(let error):
+        print(error)
+    }
+}
+```
+
+You can also map the response to objects using `ObjectMapper` or `ModelMapper` (needs additional pod specified in <a href="#installation">Installation</a>).
+```swift
+Github.Repos("DroidsOnRoids").request().parseArray(Repository.self) { result in
+    switch result {
+    case .Success(let object):
+        print(object)
     case .Failure(let error):
         print(error)
     }
