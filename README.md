@@ -31,6 +31,8 @@ MyAPI.Authenticate().request().parseJSON(:_)
 MyAPI.UserInfo(username: "trickyusername").request().parseObject(:_) // via ModelMapper or ObjectMapper
 ```
 
+### Example
+
 To make it works well, first, import the module.
 
 ```swift
