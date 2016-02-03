@@ -61,13 +61,44 @@ struct UserInfoEndpoint: Subendpointable {
     
 }
 
+enum OpenWeatherMap: Endpointable {
+    
+    case Weather(String)
+    
+    var baseUrl: String { return "http://api.openweathermap.org/data/2.5" }
+    
+    var endpoint: Subendpointable {
+        switch self {
+        case .Weather(let city):
+            return WeatherEndpoint(city: city)
+        }
+    }
+    
+}
+
+struct WeatherEndpoint: Subendpointable {
+    
+    // We specify the parameters
+    let city: String!
+    
+    // Required methods/parameters
+    var path: String { return "/weather" }
+    var method: EndpointMethod { return .GET }
+    var parameters: [String: AnyObject]? { return ["q" : city, "appid" : "44db6a862fba0b067b1930da0d769e98"] }
+    var headers: [String : String]? { return nil }
+    
+    init(city: String) {
+        self.city = city
+    }
+    
+}
+
 class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
-        Github.Repos("mjacko").request().parseJSON { result in
+        Github.UserInfo("mjacko").request().parseJSON { result in
             switch result {
             case .Success(let json):
                 print(json)
@@ -76,7 +107,7 @@ class ViewController: UIViewController {
             }
         }
         
-        Github.UserInfo("mjacko").request().parseSwiftyJSON { result in
+        OpenWeatherMap.Weather("Wroclaw").request().parseJSON { result in
             switch result {
             case .Success(let json):
                 print(json)
@@ -84,6 +115,7 @@ class ViewController: UIViewController {
                 print("Error: \(error)")
             }
         }
+        
     }
 
     override func didReceiveMemoryWarning() {

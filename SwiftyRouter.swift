@@ -50,7 +50,7 @@ extension Endpointable {
         let request = Alamofire.request(Alamofire.Method(rawValue: endpoint.method.rawValue)!,
             baseUrl + endpoint.path,
             parameters: endpoint.parameters,
-            encoding: .JSON,
+            encoding: endpoint.method == .GET ? .URL : .JSON,
             headers: endpoint.headers)
         
         request.responseData { response in

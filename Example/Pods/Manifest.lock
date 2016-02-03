@@ -1,6 +1,8 @@
 PODS:
   - Alamofire (3.1.5)
   - SwiftyRouter (0.1.0):
+    - SwiftyRouter/Core (= 0.1.0)
+  - SwiftyRouter/Core (0.1.0):
     - Alamofire (~> 3.1)
 
 DEPENDENCIES:
@@ -12,6 +14,6 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 5f730ba29fd113b7ddd71c1e65d0c630acf5d7b0
-  SwiftyRouter: 15e131d2da0213bb374dfdedd913881da066cb60
+  SwiftyRouter: 1361d70aab75370bd3f6d39a2a80043d00cedf89
 
 COCOAPODS: 0.39.0
