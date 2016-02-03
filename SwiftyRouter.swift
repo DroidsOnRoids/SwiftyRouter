@@ -19,8 +19,8 @@ public enum EndpointMethod: String {
 
 /**
  Result that has two cases.
- - Success(Any): Successful. Returns `any` in its associated type.
- - Failure(NSError): Failure. Returns `NSError` in its associated type.
+ - `Success(Any)`: Successful. Returns `Any` in its associated type.
+ - `Failure(NSError)`: Failure. Returns `NSError` in its associated type.
  */
 public enum SwiftyRouterResult {
 
@@ -30,10 +30,10 @@ public enum SwiftyRouterResult {
 }
 
 /**
- Protocol that should be implemented by API service `enum`. It should have `case`s being endpoints.
+ Protocol that should be implemented by API service's `enum`. It should have `case`s being endpoints.
  Required variables are:
- - baseUrl: the path that would be prefix to API request URL address (should not end with `/`)
- - endpoint: the endpoint that should be executed, preferably returned inside `switch` when there is more than one endpoint
+ - `baseUrl`: The path that would be a prefix to the API request URL address (should not end with `/`)
+ - `endpoint`: The endpoint that should be executed, preferably returned inside `switch` when there is more than one endpoint
  */
 public protocol Endpointable {
 
@@ -43,12 +43,12 @@ public protocol Endpointable {
 }
 
 /**
- Protocol that should be implemented by endpoint's struct or class.
+ Protocol that should be implemented by endpoint's `struct` or `class`.
  Required variables are:
- - path: the path that should be added after `baseUrl` to be completed URL address (should start with `/`)
- - method: the HTTP method
- - parameters: the parameters send as JSON or in URL (GET method exclusively) (can be nil)
- - headers: the HTTP headers (can be nil)
+ - `path`: The path that should be added after `baseUrl` to be completed URL address (should start with `/`)
+ - `method`: The HTTP method
+ - `parameters`: The parameters send as JSON or in URL (GET method exclusively) (can be `nil`)
+ - `headers`: The HTTP headers (can be `nil`)
  */
 public protocol Subendpointable {
     
@@ -63,7 +63,7 @@ extension Endpointable {
     
     /**
      Creates a request using Alamofire.
-     - returns: the created request
+     - returns: The created request
      */
     public func request() -> Request {
         return request(nil)
@@ -71,8 +71,8 @@ extension Endpointable {
     
     /**
      Creates a request using Alamofire.
-     - parameter completion: a closure that lets you grab result
-     - returns: the created request
+     - parameter completion: A closure that lets you grab result
+     - returns: The created request
      */
     public func request(completion: (SwiftyRouterResult -> Void)?) -> Request {
         let request = Alamofire.request(Alamofire.Method(rawValue: endpoint.method.rawValue)!,
@@ -120,7 +120,7 @@ extension Request {
     
     /**
      Returns a JSON object constructed from the response data using `NSJSONSerialization`.
-     - parameter completion: a closure that lets you grab result
+     - parameter completion: A closure that lets you grab result
      */
     public func parseJSON(completion: (SwiftyRouterResult -> Void)) -> Void {
         self.responseJSON { response in
