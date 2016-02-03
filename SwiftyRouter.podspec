@@ -21,16 +21,19 @@ Pod::Spec.new do |s|
   s.subspec 'ObjectMapper' do |cs|
     cs.source_files = 'ObjectMapper/SwiftyRouter+ObjectMapper.swift'
     cs.dependency 'ObjectMapper', '~> 1.1'
+    cs.dependency 'SwiftyRouter/Core'
   end
 
   s.subspec 'SwiftyJSON' do |cs|
     cs.source_files = 'SwiftyJSON/SwiftyRouter+SwiftyJSON.swift'
     cs.dependency 'SwiftyJSON', '~> 2.3'
+    cs.dependency 'SwiftyRouter/Core'
   end
 
   s.subspec 'ModelMapper' do |cs|
     cs.source_files = 'ModelMapper/SwiftyRouter+ModelMapper.swift'
-    cs.dependency 'ModelMapper'
+    cs.dependency 'ModelMapper', '~> 1.0'
+    cs.dependency 'SwiftyRouter/Core'
   end
 
   s.default_subspecs = 'Core'
