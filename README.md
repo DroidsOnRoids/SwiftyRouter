@@ -1,6 +1,5 @@
 # SwiftyRouter
 
-[![CI Status](http://img.shields.io/travis/Piotr Sochalewski/SwiftyRouter.svg?style=flat)](https://travis-ci.org/Piotr Sochalewski/SwiftyRouter)
 [![Version](https://img.shields.io/cocoapods/v/SwiftyRouter.svg?style=flat)](http://cocoapods.org/pods/SwiftyRouter)
 [![License](https://img.shields.io/cocoapods/l/SwiftyRouter.svg?style=flat)](http://cocoapods.org/pods/SwiftyRouter)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftyRouter.svg?style=flat)](http://cocoapods.org/pods/SwiftyRouter)
