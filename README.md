@@ -34,8 +34,8 @@ pod "SwiftyRouter/SwiftyJSON"
 SwiftyRouter lets you get easily raw `NSData`, parsed `JSON` or mapped model received from API request this way:
 
 ```swift
-MyAPI.Authenticate().request().parseJSON(:_)
-MyAPI.UserInfo(username: "trickyusername").request().parseObject(:_) // via ModelMapper or ObjectMapper
+MyAPI.Authenticate().request().parseJSON(_:)
+MyAPI.UserInfo(username: "trickyusername").request().parseObject(_:) // via ModelMapper or ObjectMapper
 ```
 
 ### Example
