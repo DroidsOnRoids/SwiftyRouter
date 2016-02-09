@@ -1,29 +1,66 @@
-import UIKit
 import XCTest
 import SwiftyRouter
 
 class Tests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
+    enum HTTPBin: Endpointable {
+        
+        case headers
+        
+        var baseUrl: String { return "https://httpbin.org" }
+        var endpoint: Subendpointable {
+            switch self {
+            case .headers:
+                return HeadersEndpoint()
+            }
         }
     }
     
-}
+    struct HeadersEndpoint: Subendpointable {
+        
+        var path: String { return "/headers" }
+        var method: EndpointMethod { return .GET }
+        var parameters: [String: AnyObject]? { return nil }
+        var headers: [String : String]? { return nil }
+        
+    }
+    
+    func testRequest() {
+        let expectation = expectationWithDescription("Request")
+        
+        HTTPBin.headers.request { (result) -> Void in
+            expectation.fulfill()
+            
+            switch result {
+            case .Success(let data as NSData):
+                XCTAssert(data.length > 0, "Received data should not be empty.")
+            case .Failure(let error):
+                XCTFail("Request error: \(error)")
+            default: break
+            }
+        }
+        
+        waitForExpectationsWithTimeout(3.0, handler: nil)
+    }
+    
+    func testParseJSON() {
+        let expectation = expectationWithDescription("Parse JSON")
+        
+        HTTPBin.headers.request().parseJSON { (result) -> Void in
+            expectation.fulfill()
+            
+            switch result {
+            case .Success(let json):
+                guard let _ = json as? [String : AnyObject] else {
+                    XCTFail("Received JSON should be Dictionary<String, AnyObject>")
+                    return
+                }
+            case .Failure(let error):
+                XCTFail("Parse JSON error: \(error)")
+            }
+        }
+        
+        waitForExpectationsWithTimeout(3.0, handler: nil)
+    }
+    
+ }
