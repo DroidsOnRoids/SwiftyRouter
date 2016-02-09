@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "SwiftyRouter"
-  s.version          = "0.1.2"
+  s.version          = "0.1.2.1"
   s.summary          = "Easy networking in Swift"
   s.description      = "SwiftyRouter makes it easy to deal with network connection in Swift"
   s.homepage         = "https://github.com/DroidsOnRoids/SwiftyRouter"

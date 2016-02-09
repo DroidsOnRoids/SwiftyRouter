@@ -33,11 +33,15 @@ class Tests: XCTestCase {
             expectation.fulfill()
             
             switch result {
-            case .Success(let data as NSData):
+            case .Success(let data):
+                guard let data = data as? NSData else {
+                    XCTFail("Received data is not NSData")
+                    return
+                }
+                
                 XCTAssert(data.length > 0, "Received data should not be empty.")
             case .Failure(let error):
                 XCTFail("Request error: \(error)")
-            default: break
             }
         }
         
