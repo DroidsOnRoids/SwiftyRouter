@@ -14,6 +14,7 @@ class Tests: XCTestCase {
                 return HeadersEndpoint()
             }
         }
+        
     }
     
     struct HeadersEndpoint: Subendpointable {
