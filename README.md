@@ -46,7 +46,7 @@ To make it works well, first, import the module.
 import SwiftyRouter
 ```
 
-Then create `enum` for selected API service, i.e. GitHub API. Remember to implement `Endpointable` protocol with all required properties (meaning `baseUrl` and `endpoint`). In this case we cover two endpoints: user repos,and user info.
+Then create `enum` for selected API service, i.e. GitHub API. Remember to implement `Endpointable` protocol with all required properties (meaning `baseUrl` and `endpoint`). In this case we cover two endpoints: user repos, and user info.
 
 ```swift
 enum Github: Endpointable {
@@ -68,7 +68,7 @@ enum Github: Endpointable {
 }
 ```
 
-Then implement previously defined endpoints like structs or classes with `Subendpointable` protocol. One more time fill all required properties (`path`, `method`, `parameters` and `headers`). We've got here quite convenient `init(:_)` with username being part of URL.
+Then implement previously defined endpoints like structs or classes with `Subendpointable` protocol. One more time fill all required properties (`path`, `method`, `parameters` and `headers`). We've got here quite convenient `init` with username being part of URL.
 
 ```swift
 struct ReposEndpoint: Subendpointable {
