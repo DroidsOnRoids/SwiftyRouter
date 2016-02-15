@@ -3,7 +3,7 @@
 //  SwiftyRouter
 //
 //  Created by Piotr Sochalewski on 02/01/2016.
-//  Copyright (c) 2016 Piotr Sochalewski. All rights reserved.
+//  Copyright (c) 2016 Droids on Roids LLC.
 //
 
 import UIKit
@@ -98,10 +98,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Github.UserInfo("mjacko").request().parseJSON { result in
+        Github.UserInfo("DroidsOnRoids").request { result in
             switch result {
-            case .Success(let json):
-                print(json)
+            case .Success(let data):
+                print("NSData goes here: \(data)")
             case .Failure(let error):
                 print("Error: \(error)")
             }
@@ -110,7 +110,7 @@ class ViewController: UIViewController {
         OpenWeatherMap.Weather("Wroclaw").request().parseJSON { result in
             switch result {
             case .Success(let json):
-                print(json)
+                print("Parsed JSON goes here: \(json)")
             case .Failure(let error):
                 print("Error: \(error)")
             }

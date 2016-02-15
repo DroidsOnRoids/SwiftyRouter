@@ -3,7 +3,7 @@
 //  SwiftyRouter
 //
 //  Created by Piotr Sochalewski on 02/01/2016.
-//  Copyright (c) 2016 Piotr Sochalewski. All rights reserved.
+//  Copyright (c) 2016 Droids on Roids LLC.
 //
 
 import UIKit

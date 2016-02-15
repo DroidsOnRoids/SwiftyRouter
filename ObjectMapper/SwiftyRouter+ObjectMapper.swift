@@ -1,9 +1,9 @@
 //
 //  SwiftyRouter+ObjectMapper.swift
-//  Pods
+//  SwiftyRouter
 //
 //  Created by Lukasz Mroz on 02.02.2016.
-//
+//  Copyright (c) 2016 Droids on Roids LLC.
 //
 
 import Alamofire
@@ -11,7 +11,7 @@ import ObjectMapper
 
 public extension Request {
     
-    private func parse<T: Mappable>(type: T.Type, objectGetter: String -> Any?, completion: SwiftyRouterResult -> Void) -> Self  {
+    private func parse<T: Mappable>(type: T.Type, objectGetter: String -> Any?, completion: SwiftyRouterResult -> Void) -> Self {
         return response(completionHandler: { (request, response, data, error) -> Void in
             
             if let error = error {
