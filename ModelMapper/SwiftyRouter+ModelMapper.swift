@@ -46,11 +46,11 @@ extension Request {
         })
     }
     
-    public func parseObject<T: Mappable>(type: T.Type, completion: SwiftyRouterResult -> Void) -> Self  {
+    public func parseObject<T: Mappable>(type: T.Type, completion: SwiftyRouterResult -> Void) -> Self {
         return parse(type, objectGetter: { T.from($0) }, completion: completion)
     }
     
-    public func parseArray<T: Mappable>(type: T.Type, completion: SwiftyRouterResult -> Void) -> Self  {
+    public func parseArray<T: Mappable>(type: T.Type, completion: SwiftyRouterResult -> Void) -> Self {
         return parse(type, objectGetter: { T.from($0) }, completion: completion)
     }
     
