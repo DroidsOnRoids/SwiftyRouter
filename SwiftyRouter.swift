@@ -73,7 +73,7 @@ extension Endpointable {
      - returns: The created request
      */
     public func request(completion: (SwiftyRouterResult -> Void)?) -> Request {
-        let request = Alamofire.request(endpoint.method, //Alamofire.Method(rawValue: endpoint.method.rawValue)!,
+        let request = Alamofire.request(endpoint.method,
             baseUrl + endpoint.path,
             parameters: endpoint.parameters,
             encoding: endpoint.method == .GET ? .URL : .JSON,
