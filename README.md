@@ -34,7 +34,8 @@ pod "SwiftyRouter/SwiftyJSON"
 SwiftyRouter lets you get easily raw `NSData`, parsed `JSON` or mapped model received from API request this way:
 
 ```swift
-MyAPI.Authenticate().request().parseJSON(_:)
+MyAPI.Authenticate().request(_:)
+MyAPI.List().request().parseJSON(_:)
 MyAPI.UserInfo(username: "trickyusername").request().parseObject(_:) // via ModelMapper or ObjectMapper
 ```
 
@@ -46,7 +47,7 @@ To make it works well, first, import the module.
 import SwiftyRouter
 ```
 
-Then create `enum` for selected API service, i.e. GitHub API. Remember to implement `Endpointable` protocol with all required properties (meaning `baseUrl` and `endpoint`). In this case we cover two endpoints: user repos,and user info.
+Then create `enum` for selected API service, i.e. GitHub API. Remember to implement `Endpointable` protocol with all required properties (meaning `baseUrl` and `endpoint`). In this case we cover two endpoints: user repos, and user info.
 
 ```swift
 enum Github: Endpointable {
@@ -68,7 +69,7 @@ enum Github: Endpointable {
 }
 ```
 
-Then implement previously defined endpoints like structs or classes with `Subendpointable` protocol. One more time fill all required properties (`path`, `method`, `parameters` and `headers`). We've got here quite convenient `init(:_)` with username being part of URL.
+Then implement previously defined endpoints like structs or classes with `Subendpointable` protocol. One more time fill all required properties (`path`, `method`, `parameters` and `headers`). We've got here quite convenient `init` with username being part of URL.
 
 ```swift
 struct ReposEndpoint: Subendpointable {

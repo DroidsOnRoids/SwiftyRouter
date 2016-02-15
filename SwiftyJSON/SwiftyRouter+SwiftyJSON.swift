@@ -1,9 +1,9 @@
 //
 //  SwiftyRouter+SwiftyJSON.swift
-//  Pods
+//  SwiftyRouter
 //
 //  Created by Lukasz Mroz on 02.02.2016.
-//
+//  Copyright (c) 2016 Droids on Roids LLC.
 //
 
 import Alamofire

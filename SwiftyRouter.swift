@@ -1,21 +1,19 @@
 //
 //  SwiftyRouter.swift
-//  Pods
+//  SwiftyRouter
 //
 //  Created by Piotr Sochalewski on 02.02.2016.
-//
+//  Copyright (c) 2016 Droids on Roids LLC.
 //
 
 import Alamofire
 
-public enum EndpointMethod: String {
-    
-    case GET
-    case POST
-    case PUT
-    case DELETE
-    
-}
+/**
+ HTTP method definitions.
+ 
+ See https://tools.ietf.org/html/rfc7231#section-4.3
+ */
+public typealias EndpointMethod = Alamofire.Method
 
 /**
  Result that has two cases.
@@ -75,7 +73,7 @@ extension Endpointable {
      - returns: The created request
      */
     public func request(completion: (SwiftyRouterResult -> Void)?) -> Request {
-        let request = Alamofire.request(Alamofire.Method(rawValue: endpoint.method.rawValue)!,
+        let request = Alamofire.request(endpoint.method,
             baseUrl + endpoint.path,
             parameters: endpoint.parameters,
             encoding: endpoint.method == .GET ? .URL : .JSON,
@@ -99,7 +97,6 @@ extension Endpointable {
 extension Request {
     
     public enum ParseError {
-        
         case EmptyData
         case CannotParse
         
@@ -115,7 +112,6 @@ extension Request {
                 return NSError(domain: domain, code: 421, userInfo: ["error": "Empty data."])
             }
         }
-        
     }
     
     /**

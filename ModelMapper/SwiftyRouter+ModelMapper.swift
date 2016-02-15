@@ -1,9 +1,9 @@
 //
 //  SwiftyRouter+ModelMapper.swift
-//  Pods
+//  SwiftyRouter
 //
 //  Created by Lukasz Mroz on 02.02.2016.
-//
+//  Copyright (c) 2016 Droids on Roids LLC.
 //
 
 import Alamofire
@@ -11,7 +11,7 @@ import Mapper
 
 extension Request {
     
-    private func parse<T: Mappable>(type: T.Type, objectGetter: NSDictionary -> Any?, completion: SwiftyRouterResult -> Void) -> Self  {
+    private func parse<T: Mappable>(type: T.Type, objectGetter: NSDictionary -> Any?, completion: SwiftyRouterResult -> Void) -> Self {
         return response(completionHandler: { (request, response, data, error) -> Void in
             
             if let error = error {
@@ -46,11 +46,11 @@ extension Request {
         })
     }
     
-    public func parseObject<T: Mappable>(type: T.Type, completion: SwiftyRouterResult -> Void) -> Self  {
+    public func parseObject<T: Mappable>(type: T.Type, completion: SwiftyRouterResult -> Void) -> Self {
         return parse(type, objectGetter: { T.from($0) }, completion: completion)
     }
     
-    public func parseArray<T: Mappable>(type: T.Type, completion: SwiftyRouterResult -> Void) -> Self  {
+    public func parseArray<T: Mappable>(type: T.Type, completion: SwiftyRouterResult -> Void) -> Self {
         return parse(type, objectGetter: { T.from($0) }, completion: completion)
     }
     

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "SwiftyRouter"
-  s.version          = "0.1.2.1"
+  s.version          = "0.1.3"
   s.summary          = "Easy networking in Swift"
   s.description      = "SwiftyRouter makes it easy to deal with network connection in Swift"
   s.homepage         = "https://github.com/DroidsOnRoids/SwiftyRouter"
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'Core' do |cs|
     cs.source_files = 'SwiftyRouter.swift'
-    cs.dependency 'Alamofire', '~> 3.1'
+    cs.dependency 'Alamofire', '~> 3.2'
   end
 
   s.subspec 'ObjectMapper' do |cs|
