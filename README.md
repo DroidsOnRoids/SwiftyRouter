@@ -4,13 +4,13 @@
 [![License](https://img.shields.io/cocoapods/l/SwiftyRouter.svg?style=flat)](http://cocoapods.org/pods/SwiftyRouter)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftyRouter.svg?style=flat)](http://cocoapods.org/pods/SwiftyRouter)
 
-## Usage
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
 ## Requirements
 
 Swift 2.x
+
+## Example
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Installation
 
