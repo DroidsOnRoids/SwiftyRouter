@@ -147,7 +147,7 @@ Github.Repos("DroidsOnRoids").request().parseArray(Repository.self) { result in
 
 ## Author
 
-Droids on Roids LLC<br />
+Droids on Roids LLC, opensource@droidsonroids.pl<br />
 Piotr Sochalewski, piotr.sochalewski@droidsonroids.pl<br />
 Łukasz Mróz, lukasz.mroz@droidsonroids.pl
 
